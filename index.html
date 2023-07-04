@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dayanna Macay">
+  <meta name="keywords" content="Moda Outfit Novedades Descuentos">
+  <meta name="description" content="Proyecto Zara">
+  <!--Descargamos bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!--Linkeamos google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+  <!--descargamos los iconos de bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!--Linkeamos la pagina de css-->
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <title>BOOTSTRAP</title>
+</head>
+
+<body>
+  <!--Titulo en la pagina utilizando clases de bootstrap-->
+  <h1 class="text-danger fs-3 text-center">PÁGINA WEB CON BOOTSTRAP...</h1>
+
+  <!--Crear el header del sitio-->
+  <header class="container-fluid bg-primary d-flex justify-content-center p-3 mb-2">
+    <img src="imagenes/cup-hot-fill.svg" alt="cafe" width="40" height="40">
+    <p class="text-dark fs-5">Boutique Zara</p>
+  </header>
+
+  <!--Incorporamos la nav bar de bootstrap-->
+  <nav class="navbar navbar-expand-lg bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="bi bi-behance icono-principal"></i></a> <!--Icono-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registro.html">Registrarse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#carouselExample">Galeria</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Incrustamos un carrusel de bootstrap-->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/vestido.jpg" class="d-block w-100 h-50" alt="vestidos">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/camisas.jpeg" class="d-block w-100 h-50" alt="camisas">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/jeans.jpg" class="d-block w-100 h-50" alt="jeans">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/chaquetas.jpg" class="d-block w-100 h-50" alt="chaqueta">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/zara.jpeg" class="d-block w-100 h-50" alt="zara">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <!--Crear Seccion principal-->
+  <div class="d-flex justify-content-center">
+    <section class="w-50 text-center pt-5 ">
+      <h1 class="p-3 fs-2 border-top border-3">Historia de la <span class="text-danger">Boutique Zara</span></h1>
+      <p class="p-3 fs-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ipsa maiores sit praesentium expedita
+        quidem nobis vero, fuga labore incidunt iste quia tempore placeat rerum illum. Eum reprehenderit quod eveniet?
+      </p>
+    </section>
+  </div>
+
+  <!--GRID-->
+  <section class="container-fluid">
+    <div class="row w-100">
+
+      <div class="col-lg-6 col-sm-12 d-flex justify-content-center fs-5 text-center">
+        <img src="imagenes/zara.jpeg" alt="imagen1" width="180" height="160">
+        <div>
+          <h3 class="fs-3 mt-4 px-4 pb-1">Quito</h3>
+          <p class="px-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dignissimos, ipsa ducimus earum consequuntur maxime ullam esse error provident quas sunt velit repellat, et natus inventore veniam, incidunt impedit. At.</p>
+        </div>
+      </div>
+
+        <div class="col-lg-6 col-sm-12 d-flex justify-content-center fs-5 text-center">
+          <img src="imagenes/zara.jpeg" alt="imagen1" width="180" height="160">
+          <div>
+            <h3 class="fs-3 mt-4 px-4 pb-1">Quito</h3>
+            <p class="px-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dignissimos, ipsa ducimus earum consequuntur maxime ullam esse error provident quas sunt velit repellat, et natus inventore veniam, incidunt impedit. At.</p>
+          </div>
+        </div>
+      
+    </div>
+  </section>
+
+  <!--Incorporamos una tarjeta-->
+  <div class="d-flex justify-content-center">
+    <div class="card contenedor-tarjeta" style="width: 18rem;">
+      <img src="imagenes/chaquetas.jpg" class="card-img-top" alt="vestimenta">
+      <div class="card-body">
+        <p class="card-text text-center text-primary">Visitamos por temporada tenemos varios descuentos.</p>
+      </div>
+    </div>
+
+    <div class="card contenedor-tarjeta" style="width: 18rem;">
+      <img src="imagenes/camisas.jpeg" class="card-img-top" alt="vestimenta">
+      <div class="card-body">
+        <p class="card-text text-center text-primary">Visitamos por temporada tenemos varios descuentos.</p>
+      </div>
+    </div>
+
+    <div class="card contenedor-tarjeta" style="width: 18rem;">
+      <img src="imagenes/jeans.jpg" class="card-img-top" alt="vestimenta">
+      <div class="card-body">
+        <p class="card-text text-center text-primary">Visitamos por temporada tenemos varios descuentos.</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
